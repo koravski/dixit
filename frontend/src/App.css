@@ -1,0 +1,272 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.header h1 {
+  padding: .5rem 1rem;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+}
+
+.header {
+  background: #FF550B linear-gradient(180deg, #ff6f30, #FF550B) repeat-x !important;
+}
+
+body{
+  background: #111111;
+}
+
+.container__home {
+  color: #fff;
+}
+
+
+.container__home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
+
+.container__home .main-home {
+text-align: left;
+}
+
+.white {
+  color: #fff;
+}
+
+.btn-warning {
+  color: #fff;
+  background: red;
+  border: 0;
+  font-weight: bold;
+}
+
+.status-rank {
+  display: none;
+  left: 0 !important;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .role-wrapper {
+    width: 100%;
+    position: initial !important;
+    bottom: initial;
+}
+div#stock {
+  display: none !important;
+}
+
+.hand-wrapper {
+  position: initial !important;
+  color: #fff;
+}
+
+.eachHandContainer {
+  width: 250px;
+  height: 400px;
+
+
+  margin:2px;
+  display: inline-table;
+  overflow:hidden;
+  margin-left:8px;
+}
+
+div#hand {
+  height:400px;
+  width:100%;
+  text-align:left;
+  white-space: nowrap;
+  overflow-y:hidden;
+}
+
+.zoom-up-card:hover {
+  transform: scale(1);
+}
+
+
+.eachHandButton:hover {
+  border: solid;
+  border-color: red;
+  position: initial;
+  top: 0;
+}
+.eachFieldButton:hover {
+  position: initial;
+  top: 0;
+}
+
+#story {
+  position: initial;
+}
+
+.field-wrapper {
+  position: initial;
+}
+
+.game-core {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-wrapper {
+  order: -1;
+}
+
+div#story {
+  order: 0;
+  width: 100%;
+  background: #303030 !important;
+  border: 0;
+  box-shadow: 0 0 0;
+}
+
+.story-title {
+  margin-top: 16px
+}
+.role-wrapper {
+  order: -2;
+}
+.field-wrapper {
+  color: #fff;
+}
+
+.field-wrapper #field {
+  height:400px;
+  width:100%;
+  text-align:left;
+  white-space: nowrap;
+  overflow-y:hidden;
+}
+
+.eachFieldContainer.zoom-up-card {
+  width: 250px;
+  height: 400px;
+
+
+  margin:2px;
+  display: inline-table;
+  overflow:hidden;
+  margin-left:8px;
+}
+
+button.btn.btn-warning.fieldSelectButton {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.eachFieldRadio:checked + .eachFieldButton {
+  top: 0 !important;
+}
+
+.hand-wrapper {
+  margin-top: 70px;
+}
+
+.icon-other,
+.icon-master {
+color: #fff;
+}
+
+.self-status .icon-other,
+.self-status .icon-master
+ {
+  color: #F3C759;
+}
+
+.field-result-wrapper {
+  overflow-y: hidden;
+}
+
+.answerContainer {
+  width: 150px;
+  height: 220px;
+}
+
+
+element.style {
+}
+
+.eachOwnerNames {
+    width: 150px;
+    height: 10px;
+}
+
+.player-list {
+  margin-top: 60px;
+  padding: .5rem 1rem;
+}
+
+.player-list table {
+  width: 100%;
+  
+}
+.player-list table td {
+  box-shadow: 0 0 0 !important;
+}
+
+.field-wrapper {
+  margin-top: 40px;
+}
+
+.role-container {
+  padding: 10px 0;
+}
+
+div#discard {
+  display: none !important;
+}
+
+.game-start {
+  position: initial;
+}
+
+label.deck-select-content {
+  display: none;
+}
+
+.room-list {
+  display: block !important;
+}
+
+}

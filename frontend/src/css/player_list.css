@@ -1,0 +1,60 @@
+.table {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    width: auto;
+    background-color: #303030 !important;
+    margin: 5px;
+}
+.table td {
+    font-weight: 600;
+    text-shadow: 2px 0 2px #606060;
+    background-color: rgba(155,155,155,0.3);
+    /* background-clip: padding-box; */
+    box-shadow: 3px 3px 1px #007AB7;
+    border: solid 5px transparent;
+    padding: 0 10px 0 10px;
+}
+
+.self-status {
+    color: #F3C759;
+}
+
+.other-status {
+    /* background-color: white; */
+    color: white;
+}
+
+.icon-master {
+    padding-top: 4px;
+    font-size: 180%;
+    color: #007AB7;
+    margin-left: 5px;
+    margin-right: -5px;
+}
+.icon-other {
+    padding-top: 2px;
+    font-size: 200%;
+    color: #007AB7;
+    margin-left: 5px;
+    margin-right: -5px;
+}
+
+.status-icon {
+    width: 20px;
+    text-align: center;
+    margin: auto;
+}
+.status-name {
+    margin-top: 7px;
+}
+.status-score {
+    margin-top: 2px;
+    font-size: 130%;
+}
+.status-rank {
+    position: absolute;
+    font-size: 150%;
+    left:10px;
+    margin: auto;
+}

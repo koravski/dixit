@@ -1,0 +1,14 @@
+# .DS_Store
+.DS_Store
+
+#.vscode
+.vscode/
+
+# .cache
+.cache/
+
+# node_modules
+node_modules/
+
+# build
+build/

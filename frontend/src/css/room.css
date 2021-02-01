@@ -1,0 +1,108 @@
+.room-list {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.room-list-content {
+    width: 100%;
+    display: flex;
+    /* background-color: #45A1CF; */
+    margin:auto;
+    padding: .5rem 1rem;
+    max-width: 400px;
+}
+
+.room-list-content > * {
+    font-weight: 600;
+    text-shadow: 2px 0 2px #606060;
+    background-color: rgba(155,155,155,0.3);
+    /* background-clip: padding-box; */
+    box-shadow: 0px 0px 1px #fff;
+    border: solid 5px transparent;
+    padding: 0 10px 0 10px;
+    background-color: #333b3f;
+}
+
+.room-decision-button {
+    width: 35%;
+    margin-right: 0;
+    padding-top: 10px;
+}
+
+.room-button {
+    /* padding-top: 10%;
+    padding-bottom: 2%; */
+}
+
+.room-button > button
+{
+    /* margin: 1%; */
+}
+
+.room-name {
+    width: 65%;
+    font-weight: 600;
+    text-shadow: 2px 0 2px #606060;
+    background-color: rgba(155,155,155,0.3);
+    /* background-clip: padding-box; */
+    /* box-shadow: 3px 3px 1px #007AB7; */
+    border: solid 5px transparent;
+    padding: 13px 10px 0 10px;
+    color: white;
+    font-size: 130%;
+    background-color: #333b3f;
+}
+.game-start
+{
+    position: absolute;
+    width: 100%;
+    top: 23%;
+}
+.deck-select {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+.deck-select-content {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    color: white;
+    font-weight: 500;
+    background-color: #45A1CF;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    box-shadow: 3px 3px 1px #005A97;
+}
+.deck-select input {
+    display: none;
+}
+.deck-select-content:hover {
+    border: 5px solid #007AB7;
+}
+.deck-select input:checked + .deck-select-content {
+    border: 5px solid #7d8d96;
+    box-shadow: none;
+}
+
+.room-leave {
+    position: absolute;
+    top: 85%;
+    right: 5%;
+    border: 2px solid grey;
+}
+
+.matching {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+}
+
+.overlap {
+    color: red;
+    font-weight: 500;
+}
+

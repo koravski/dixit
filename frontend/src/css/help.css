@@ -1,0 +1,22 @@
+#help-content span{
+    width: 10px;
+    background-color: blue;
+    color: blue;
+    size: 200%;
+}
+
+#help-content span:hover{
+    width: 10px;
+    background-color: blue;
+    color: blue;
+}
+
+#help {
+    position: absolute;
+    top: 0;
+    /* display: none; */
+}
+
+#help:hover {
+    display: block;
+}

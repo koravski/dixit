@@ -1,0 +1,48 @@
+#story {
+    position: absolute;
+    width: 50%;
+    margin: 0;
+    background-color: #006633; /* ボックス背景色 */
+    color: #fff; /* 文章色 */
+    border: 8px solid #b2771f; /* 枠線 */
+    border-radius: 3px; /* 角の丸み */
+    box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+    left: 25%;
+}
+
+#story::before,
+#story::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+} 
+
+#story::before {
+    /* right: 10px;
+    border: solid 3px #fff; 
+    width: 20px; 
+    border-radius: 3px 2px 0 2px; */
+}
+
+#story::after {
+    /* right: 40px;
+    border: solid 3px #ffff6b; 
+    width: 15px; 
+    border-radius: 8px 5px 2px 5px; */
+}
+
+#story > .story-title
+{
+    /* position: absolute; */
+    left: 1em;
+    top: .5em;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #ffff6b; /* タイトル色 */
+}
+
+#story > p
+{
+    font-size: larger;
+    font-weight: bolder;
+}

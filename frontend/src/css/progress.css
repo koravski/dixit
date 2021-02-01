@@ -1,0 +1,87 @@
+
+
+/* #progress
+{
+    position: absolute;
+    top: 50%;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 150%;
+    margin-top: 0;
+    width: 100%;
+    opacity: 0.5;
+
+    animation: fadeOutProgress ease 5s;
+    -webkit-animation: fadeOutProgress ease 5s linear forwards;
+    -moz-animation: fadeOutProgress ease 5s linear forwards;
+    -o-animation: fadeOutProgress ease 5s linear forwards;
+    -ms-animation: fadeOutProgress ease 5s linear forwards;
+}
+
+.btn btn-primary {
+    pointer-events: none;
+} */
+#progress {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    display: flex;
+    width: 100%;
+    height: 5%;
+}
+
+.help {
+    width: 4%;
+    height: 103%;
+    padding-top: 0.5%;
+    background-color: #ccc;
+    font-size: 90%;
+    border-radius: 50%;
+    box-shadow: 2px 2px;
+    color: #fff;
+    transition: 0.2s;
+    cursor: help;
+    /* margin: auto; */
+}
+
+.help-content{
+    display: none;
+    margin-left: 2%;
+    left: -15px;
+    font-size: 100%;
+    line-height: 30px;
+    z-index: 10;
+    background-color: #646569;
+    color: #fff;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 10px;
+}
+
+.help-content:before{
+  content: '';
+  position: absolute;
+  display: none;
+  top: 20%;
+  left: 5.2%;
+  border-right: 8px solid #646569;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+
+.help:hover {
+    background-color: #aaa;
+}
+
+.help:hover + .help-content {
+    display: block;
+}
+
+.help:hover + .help-content:before{
+    display: block;
+}
+
+/* .help + .help-content {
+    display: block;
+} */

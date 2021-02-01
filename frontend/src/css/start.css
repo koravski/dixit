@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/earlyaccess/nikukyu.css');
+@import url('https://fonts.googleapis.com/earlyaccess/nicomoji.css');
+.startMsg
+{
+    position: absolute;
+    font-family: 'Nico Moji', sans-serif;
+    font-size: 600%;
+    width: 100%;
+    margin-top: 15%;
+    animation: fadeOut ease 5s;
+    -webkit-animation: fadeOut ease 5s linear forwards;
+    -moz-animation: fadeOut ease 5s linear forwards;
+    -o-animation: fadeOut ease 5s linear forwards;
+    -ms-animation: fadeOut ease 5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

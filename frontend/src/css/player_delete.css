@@ -1,0 +1,28 @@
+.deleteMsg {
+    display: inline-block;
+    padding: 10px;
+    margin: auto;
+    border-bottom: 3px solid #999;
+    font-weight: 400;
+    background-color: rgba(150,150,150,0.5);
+    color: #222;
+    animation: fadeOut ease 4s;
+    -webkit-animation: fadeOut ease 4s linear forwards;
+    -moz-animation: fadeOut ease 4s linear forwards;
+    -o-animation: fadeOut ease 4s linear forwards;
+    -ms-animation: fadeOut ease 4s linear forwards;
+    opacity: 0;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

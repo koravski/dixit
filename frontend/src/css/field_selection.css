@@ -1,0 +1,73 @@
+.field-wrapper
+{
+    top: 30%;
+    padding-left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.eachFieldContainer{
+    padding-left: 0;
+    width: 100px;
+    height: 150px;
+    position: relative;
+    animation-fill-mode: both;
+    padding: 0.5%;
+}
+
+.eachFieldButton
+{
+
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding-left: 0;
+    transition-duration: 2.5s;
+    transition-property: top;
+    width: 100%;
+    height: 100%;
+}
+
+.eachFieldImage
+{
+    margin: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* transition-duration: 20s; */
+}
+
+.eachFieldRadio
+{
+    display: none;
+}
+
+.eachFieldRadio:checked + .eachFieldButton
+{
+    border: solid;
+    border-color: red;
+    position: absolute;
+    top: -10%;
+}
+
+.eachFieldButton:hover
+{
+    border: solid;
+    border-color: blue;
+    position: absolute;
+    top: -10%;
+}
+
+#field
+{
+    margin: 1%;
+}
+
+.fieldSelectButton
+{
+    /* width: 20%; */
+    padding-top: 1%;
+    margin: auto;
+    margin-top: 2%;
+}
+
