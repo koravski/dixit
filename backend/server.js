@@ -27,6 +27,7 @@ const ConfirmAnswer = require('./src/scripts/stage/confirm_answer');
 const restart = require('./src/scripts/stage/restart');
 const leave = require('./src/scripts/stage/leave');
 const disconnect = require('./src/scripts/stage/disconnect');
+var PORT = process.env.PORT || 3000;
 
 const expire = 60; // 切断後，部屋から追放するまでの猶予時間(秒)
 const interval = 30; // setIntervalの間隔(ms)
@@ -99,6 +100,6 @@ app.get('/', (request, response) => {
 //   utils.log('Starting server on port 4001');
 // });
 // サーバデプロイ用
-server.listen(3000, () => {
+server.listen(PORT, () => {
     utils.log('Starting server on port 3000');
 });
