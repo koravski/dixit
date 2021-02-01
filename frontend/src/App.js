@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from 'jquery';
-// コンポーネント
+
 import PlayerCounter from './scripts/playerCounter';
 import Chat from './scripts/chat';
 import Story from './scripts/story';
@@ -32,7 +32,7 @@ import './css/game.css';
 
 
 //const ENDPOINT = "http://34.83.112.24:3000/";
-const ENDPOINT = "localhost:3000/";
+const ENDPOINT = "https://dixin.herokuapp.com/";
 
 const socket = io(ENDPOINT, {
   query: { 'client-id': cookieVal('client-id') }, // クライアントID(プレイヤー名を保持するためのもの)

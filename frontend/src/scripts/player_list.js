@@ -65,7 +65,7 @@ export default function PlayerList(props) {
 
     return (
         <div className="player-list" style={ { display: showPlayerList ? 'block' : 'none' } }>
-            <div className="white">Players</div>
+            <div className="white kck"  style={ { display: playerList!=null ? 'block' : 'none' } } >Players</div>
             <table className="table">
                 { playerList }
             </table>   
