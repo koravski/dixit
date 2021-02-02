@@ -48,7 +48,7 @@ export default function ShowAnswer(props) {
             $('.game-core').addClass('modal-open');
         });
         $('#answerModal').on('hidden.bs.modal', () => {
-            audio.play();
+            // audio.play();
             console.log('答えのモーダル閉じました');
             $('.game-core').removeClass('modal-open');
             props.socket.emit('confirm_answer');

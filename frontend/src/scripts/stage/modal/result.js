@@ -33,7 +33,7 @@ export default function Result(props) {
             $('.game-core').addClass('modal-open');
         });
         $('#resultModalWindow').on('hidden.bs.modal', () => {
-            audio.play();
+            // audio.play();
             $('.game-core').removeClass('modal-open');
             console.log('リザルトモーダル閉じました');
             props.socket.emit('restart');

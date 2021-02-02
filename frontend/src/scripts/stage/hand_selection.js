@@ -163,7 +163,7 @@ export default function HandSelection(props) {
                     <img id="selected-hand-card" src={ selectedSrc } alt="あなたが選んだカード"/> 
                 </p>
             );
-            audio.play() // 再生
+            // audio.play() // 再生
             setTimeout(
                 () => socket.emit('others_hand_selection', { index : index }),
                 800

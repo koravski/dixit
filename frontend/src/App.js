@@ -32,7 +32,8 @@ import './css/game.css';
 
 
 //const ENDPOINT = "http://34.83.112.24:3000/";
-const ENDPOINT = "https://dixin.herokuapp.com/";
+const ENDPOINT = "localhost:3000";
+// const ENDPOINT = "//dixin.herokuapp.com";
 
 const socket = io(ENDPOINT, {
   query: { 'client-id': cookieVal('client-id') }, // クライアントID(プレイヤー名を保持するためのもの)

@@ -76,7 +76,7 @@ export default function StoryModal(props) {
             // timing options
             duration: 800
         });
-        audio.play() // 再生
+        // audio.play() // 再生
         setTimeout(
             () => props.socket.emit('story_selection', { story : data.story, masterIndex : data.masterIndex }), // サーバーに'story_selection'を送信
             800

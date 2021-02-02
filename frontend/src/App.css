@@ -103,7 +103,7 @@ div#stock {
 
 .eachHandContainer {
   width: 250px;
-  height: 400px;
+  /* height: 400px; */
 
 
   margin:2px;
@@ -130,6 +130,7 @@ div#hand {
   border-color: red;
   position: initial;
   top: 0;
+  border-width: 0;
 }
 .eachFieldButton:hover {
   position: initial;
@@ -181,7 +182,7 @@ div#story {
 
 .eachFieldContainer.zoom-up-card {
   width: 250px;
-  height: 400px;
+  /* height: 400px; */
 
 
   margin:2px;
@@ -221,6 +222,11 @@ color: #fff;
 .answerContainer {
   width: 150px;
   height: 220px;
+}
+
+.eachHandImage {
+  height: 400px !important;
+  border-radius: 10px;
 }
 
 

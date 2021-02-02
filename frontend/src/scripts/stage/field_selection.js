@@ -140,7 +140,7 @@ export default function FieldSelection(props) {
     }, [ props.socket ]);
 
     const handleclick = () => {
-        audio.play();
+        // audio.play();
         props.socket.emit('confirm_field_selection');
         setShowButton(false);
     }

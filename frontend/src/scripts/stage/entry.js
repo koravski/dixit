@@ -69,11 +69,11 @@ export default function Entry(props) {
             reset();
             return;
         } else if (data.username.match(REGEX) != null) { // 0文字の場合
-            setUserAlert("空白のみの名前は無効です");
+            setUserAlert("Blank-only names are invalid");
             reset();
             return;
         }
-        audio.play();
+        // audio.play();
         props.socket.emit('entry', { username : data.username }); // サーバーに'entry'を送信
         event.preventDefault(); // フォームによる/?への接続を止める(socketIDを一意に保つため)
         reset();

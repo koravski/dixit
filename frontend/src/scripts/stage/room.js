@@ -38,7 +38,7 @@ export default function Room(props) {
      * @param {string} roomname ルーム名
      */
     const roomEntrySubmit = (roomname) => {
-        audio.play();
+        // audio.play();
         setShowRoomContent(false);
         props.setShowStatus(true);
         props.socket.emit('room_entry', { roomname : roomname });
@@ -50,7 +50,7 @@ export default function Room(props) {
      * @param {Event} event イベント
      */
     const roomCreateSubmit = (data, event) => {
-        audio.play();
+        // audio.play();
         setShowRoomContent(false);
         props.setShowStatus(true);
         props.socket.emit('room_create', { username : data.username, roomname : data.roomname });
@@ -60,19 +60,19 @@ export default function Room(props) {
     };
     /** ルーム作成ボタンをクリックしたときのハンドラ */
     const clickRoomCreate = () => {
-        audio.play();
+        // audio.play();
         setShowRoomList(false);
         setShowRoomCreate(true);
     };
     /** ルームリスト表示をクリックしたときのハンドラ */
     const clickRoomList = () => {
-        audio.play();
+        // audio.play();
         setShowRoomCreate(false);
         setShowRoomList(true);
     };
     /** スタートボタンを押したときのハンドラ */
     const clickStart = () => {
-        audio.play();
+        // audio.play();
         props.socket.emit('start', { option : option });
         setShowStart(false);
     };
@@ -83,13 +83,15 @@ export default function Room(props) {
          * @param {RoomManager} roomManager ルームマネージャー
          */
         const updateRoomList = (roomManager) => {
-            if (roomManager.roomList.length === 0 || roomManager.roomList.filter(room => room.game.stageIndex === 0 && room.game.players.length < 6).length === 0) {
+            //number of players
+            if (roomManager.roomList.length === 0 || roomManager.roomList.filter(room => room.game.stageIndex === 0 && room.game.players.length < 30).length === 0) {
                 setRoomList(
                     <div className="white">No games at the moment</div>
                 );
             } else {
                 setRoomList(
-                    roomManager.roomList.filter(room => room.game.stageIndex === 0 && room.game.players.length < 6).map((room, index) => {
+                    //number of players
+                    roomManager.roomList.filter(room => room.game.stageIndex === 0 && room.game.players.length < 30).map((room, index) => {
                         return(
                             <div className="room-list-content" key={ index }>
                                 <div className="room-name">{ room.name }</div>
